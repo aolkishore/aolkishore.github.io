@@ -17,22 +17,39 @@
         text-align: center;
         color: #333;
     }
-    
-    /* This section controls how the image looks */
+
+    /* IMAGE STYLES */
     img.profile-pic {
-        width: 100%;           /* Responsive width */
-        max-width: 90%;      /* Maximum width (large rectangle) */
-        height: auto;          /* Maintains original aspect ratio */
-        border-radius: 8px;    /* Slightly rounded corners */
+        width: 100%;
+        max-width: 90%;       /* Large rectangle */
+        height: auto;
+        border-radius: 8px;
         border: 1px solid #ddd;
-        margin-bottom: 20px;
-        display: block;        /* Helps centering */
-        margin-left: auto;     
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
         margin-right: auto;
     }
 
     h1 { margin-top: 20px; }
-    .bio { margin-top: 20px; font-size: 1.1em; text-align: left; }
+    p { font-size: 1.1em; }
+
+    /* NEW: CONTACT SECTION STYLES */
+    .contact-section {
+        margin-top: 50px;       /* Spacing from the image */
+        padding-top: 20px;
+        border-top: 1px solid #eee; /* Light grey separator line */
+    }
+    .contact-link {
+        display: inline-block;
+        margin: 0 10px;         /* Space between links */
+        color: #0366d6;         /* Standard Link Blue */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .contact-link:hover {
+        text-decoration: underline;
+    }
   </style>
   
 </head>
@@ -41,9 +58,19 @@
   <div class="container">
   <h1>नमस्कारम्</h1>
   <p>I'm Abhijeet Kishore. Currently, I'm doing PhD at the Physics Department of IIT Kanpur in Lattice QCD under the supervision of Prof. Dipankar Chakrabarti
-    (IIT Kanpur) and Prof Subhasish Basak (NISER Bhubaneswar).</p>
+    (IIT Kanpur) and Prof. Subhasish Basak (NISER Bhubaneswar).</p>
     
   <img src="profile.jpg" alt="My profile photo" class="profile-pic">
+
+  <div class="contact-section">
+      <h3>Contact Me</h3>
+      
+      <a class="contact-link" href="mailto:your-email@example.com">Email</a>
+      
+      <a class="contact-link" href="https://github.com/aolkishore">GitHub</a>
+      
+      </div>
+    
   </div>
     
 </body>
